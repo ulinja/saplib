@@ -33,7 +33,7 @@ pacmanconf:
 pacmandeps: pacmanconf
 	pacman -Sy --needed --noconfirm $(SAPLIB_PACMAN_DEPS)
 
-# create '/etc/skel' directories
+# create '/etc/skel' directories. Specified in 'saplib.conf'
 .PHONY: etcskel
 etcskel:
 	source $(SETUP_CONFIG); for SKELDIR in "$${ETC_SKEL_DIRS[@]}"; do \
