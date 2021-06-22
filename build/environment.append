@@ -3,7 +3,8 @@
 # default programs
 EDITOR=nvim
 VISUAL=nvim
-PAGER=bat --paging=always
+PAGER=bat
+MANPAGER="nvim -c 'set ft=man' -"
 
 # misc environment variables
 HISTFILESIZE=10000
